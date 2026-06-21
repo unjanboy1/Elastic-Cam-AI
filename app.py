@@ -1,23 +1,15 @@
 import cv2
 import pyautogui
 
+from tracking.hand_tracker import HandTracker
 from deformation.stretch_engine import StretchEngine
 from ui.overlays import Overlays
-from ui.effects import Effects
-from recording.video_recorder import VideoRecorder
 
-# Camera setup
 cap = cv2.VideoCapture(0)
 
-screen_w, screen_h = pyautogui.size()
-
-# Modules
+tracker = HandTracker()
 stretch = StretchEngine()
 overlay = Overlays()
-effects = Effects()
-recorder = VideoRecorder(frame_size=(640, 480))
-
-mode = "NORMAL"
 
 while True:
     ret, frame = cap.read()
@@ -25,38 +17,34 @@ while True:
         break
 
     frame = cv2.flip(frame, 1)
+    h, w, _ = frame.shape
 
-    # Optional visual effect
-    if mode == "NORMAL":
-        frame = frame
-    elif mode == "BLUR":
-        frame = effects.blur(frame)
-    elif mode == "HIGHLIGHT":
-        frame = effects.highlight(frame)
+    hands = tracker.find_hands(frame)
 
-    # UI text
-    overlay.draw_text(frame, f"Mode: {mode} | Press Q to quit", (20, 40))
+    if hands:
+        lmList = hands[0]
 
-    # Recording
-    recorder.write(frame)
+        # index finger tip (ID 8)
+        x, y = lmList[8][1], lmList[8][2]
 
-    cv2.imshow("AI Deformation App", frame)
+        points = [
+            (x, y),
+            (x + 50, y + 50),
+            (x + 100, y),
+            (x - 50, y + 50)
+        ]
 
-    key = cv2.waitKey(1) & 0xFF
+        stretched = stretch.apply_stretch(frame, points, (x, y))
 
-    if key == ord('q'):
+        for px, py in stretched:
+            cv2.circle(frame, (px, py), 10, (0, 255, 0), -1)
+
+    overlay.draw_text(frame, "REAL HAND TRACKING ACTIVE", (20, 40))
+
+    cv2.imshow("ElasticCam AI", frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-    elif key == ord('b'):
-        mode = "BLUR"
-
-    elif key == ord('h'):
-        mode = "HIGHLIGHT"
-
-    elif key == ord('n'):
-        mode = "NORMAL"
-
-# Cleanup
 cap.release()
-recorder.stop()
 cv2.destroyAllWindows()
