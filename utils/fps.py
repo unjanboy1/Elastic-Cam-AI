@@ -26,6 +26,7 @@ class FPS:
 
     def update(self):
 
+
         self.current_time = time.time()
 
         difference = self.current_time - self.previous_time
@@ -51,4 +52,6 @@ class FPS:
             1,
             GREEN,
             2
+
+
         )
