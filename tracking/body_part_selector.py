@@ -51,6 +51,7 @@ class BodyPartSelector:
             10: "FOREHEAD"
         }
 
+
         # -----------------------------
         # Pose Landmark Mapping
         # -----------------------------

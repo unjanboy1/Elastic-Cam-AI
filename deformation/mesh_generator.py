@@ -16,6 +16,7 @@ class MeshGenerator:
     def __init__(self):
         pass
 
+
     def create_mesh(self, frame, mesh_points):
 
         h, w = frame.shape[:2]
