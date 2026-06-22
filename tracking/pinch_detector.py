@@ -5,6 +5,7 @@ Pinch Detection Module
 ----------------------------------------------------------
 Detects pinch gesture using thumb and index finger.
 
+
 Input:
     Hand landmarks from HandTracker
 
@@ -14,6 +15,7 @@ Output:
     - Pinch center
 ==========================================================
 """
+
 
 import math
 

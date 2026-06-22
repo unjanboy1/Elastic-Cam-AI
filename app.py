@@ -112,6 +112,8 @@ while True:
             cv2.circle(deformed_frame, (x, y), 6, (0, 255, 0), -1)       # Live pinch point
         else:
             cv2.circle(deformed_frame, (x, y), 6, (255, 0, 0), -1)       # Idle tracker position
+            #commits for remember
+
 
     # Render clean Text UI Hud layout overlay
     overlay.draw_text(deformed_frame, "GUM-GUM STRETCH ACTIVE", (20, 40))

@@ -7,6 +7,7 @@ Uses MediaPipe Pose to detect and track body landmarks.
 ==========================================================
 """
 
+
 import cv2
 import mediapipe as mp
 
