@@ -26,6 +26,7 @@ WINDOW_NAME = "MorphMotion AI"
 
 FULLSCREEN = False
 
+
 # ==========================
 # MediaPipe Detection
 # ==========================
@@ -33,11 +34,13 @@ FULLSCREEN = False
 HAND_DETECTION_CONFIDENCE = 0.7
 HAND_TRACKING_CONFIDENCE = 0.7
 
+
 POSE_DETECTION_CONFIDENCE = 0.7
 POSE_TRACKING_CONFIDENCE = 0.7
 
 FACE_DETECTION_CONFIDENCE = 0.7
 FACE_TRACKING_CONFIDENCE = 0.7
+
 
 # ==========================
 # Gesture Settings
@@ -48,6 +51,7 @@ FACE_TRACKING_CONFIDENCE = 0.7
 
 PINCH_THRESHOLD = 30
 
+
 # Minimum frames before confirming grab
 GRAB_CONFIRMATION_FRAMES = 4
 
@@ -57,7 +61,9 @@ GRAB_CONFIRMATION_FRAMES = 4
 
 MAX_STRETCH_DISTANCE = 350
 
+
 RUBBER_RETURN_SPEED = 0.15
+
 
 RUBBER_ELASTICITY = 0.90
 
@@ -80,6 +86,7 @@ BLACK = (0, 0, 0)
 LANDMARK_RADIUS = 4
 
 LINE_THICKNESS = 2
+
 
 FONT_SCALE = 0.7
 
@@ -114,6 +121,7 @@ VIDEO_EXTENSION = ".mp4"
 # ==========================
 
 SHOW_HAND_LANDMARKS = True
+
 
 SHOW_POSE_LANDMARKS = True
 
