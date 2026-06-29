@@ -1,25 +1,23 @@
 # Elastic Cam AI
 
-## 📌 Overview
+## 📌 Project Description
 
-**Elastic Cam AI** is an AI-powered intelligent camera surveillance system designed to provide real-time monitoring, object detection, face recognition, and event analysis. The project leverages modern Artificial Intelligence and Computer Vision techniques to enhance security, automate monitoring, and provide actionable insights from live camera feeds.
+**Elastic Cam AI** is a real-time computer vision application that simulates skin elasticity using AI-based landmark detection. The system detects key points on a person's skin from a live camera feed and allows users to interact with the detected region by pinching and stretching it naturally.
 
-The system processes video streams in real time, identifies objects or people, detects suspicious activities, and generates alerts whenever predefined conditions are met.
+Using advanced image processing and AI landmark tracking, the application continuously follows the selected skin area and deforms it in real time, creating a smooth and realistic stretching effect. This project demonstrates the integration of computer vision, facial/body landmark detection, and image warping techniques for interactive visual manipulation.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-* 🎥 Real-time camera monitoring
-* 🤖 AI-based object detection
-* 👤 Face detection and recognition
-* 🚶 Human movement tracking
-* 🚨 Suspicious activity detection
-* 📸 Image and video capture
-* 🔔 Instant alert generation
-* 📊 Event logging and reporting
-* ⚡ Fast and optimized AI inference
-* 🖥️ User-friendly interface
+* Real-time webcam capture
+* AI-based skin landmark detection
+* Interactive pinch and stretch functionality
+* Dynamic image warping
+* Smooth tracking of skin movement
+* Low-latency real-time processing
+* User-friendly interface
+* Accurate landmark localization
 
 ---
 
@@ -27,23 +25,106 @@ The system processes video streams in real time, identifies objects or people, d
 
 * Python
 * OpenCV
-* TensorFlow / PyTorch
-* YOLO Object Detection
+* MediaPipe (Landmark Detection)
 * NumPy
-* Flask / FastAPI (optional)
-* SQLite / MySQL (optional)
-* HTML, CSS, JavaScript (for web interface)
+* AI-based Image Processing
+* Computer Vision Techniques
 
+---
 
+## 📂 Project Structure
 
+```text
+Elastic-Cam-AI/
+│
+├── models/
+├── src/
+│   ├── camera.py
+│   ├── landmark_detection.py
+│   ├── image_warp.py
+│   ├── elastic_effect.py
+│   └── utils.py
+│
+├── assets/
+├── requirements.txt
+├── main.py
+└── README.md
+```
 
-## 💻 Usage
+---
 
-1. Launch the application.
-2. Connect a webcam or IP camera.
-3. Select the desired AI detection mode.
-4. Start monitoring.
-5. View real-time detection results.
-6. Receive alerts for detected events.
+## 🚀 Installation
 
+1. Clone the repository
 
+```bash
+git clone https://github.com/yourusername/Elastic-Cam-AI.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd Elastic-Cam-AI
+```
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the application
+
+```bash
+python main.py
+```
+
+---
+
+## ▶️ How It Works
+
+1. The webcam captures the user's live image.
+2. AI detects skin landmarks in real time.
+3. The user selects a region using pinch gestures or mouse interaction.
+4. The selected skin area is stretched or compressed using image warping algorithms.
+5. The deformation updates continuously while maintaining smooth visual quality.
+
+---
+
+## 📌 Applications
+
+* Augmented Reality (AR)
+* Medical and Dermatology Visualization
+* AI and Computer Vision Research
+* Interactive Image Editing
+* Educational Demonstrations
+* Entertainment and Visual Effects
+
+---
+
+## 🔮 Future Improvements
+
+* Multi-touch gesture support
+* More realistic physics-based skin deformation
+* GPU acceleration
+* Mobile application support
+* 3D skin deformation
+* AI-enhanced elasticity simulation
+
+---
+
+## 👨‍💻 Author
+
+**Your Name**
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to the open-source Computer Vision and AI communities for providing powerful libraries that made this project possible.
