@@ -34,31 +34,7 @@ The system processes video streams in real time, identifies objects or people, d
 * SQLite / MySQL (optional)
 * HTML, CSS, JavaScript (for web interface)
 
----
 
-## 📂 Project Structure
-
-```
-Elastic-Cam-AI/
-│
-├── models/
-├── dataset/
-├── images/
-├── videos/
-├── output/
-├── src/
-│   ├── detection.py
-│   ├── recognition.py
-│   ├── tracker.py
-│   ├── camera.py
-│   └── utils.py
-│
-├── app.py
-├── requirements.txt
-└── README.md
-```
-
----
 
 
 ## 💻 Usage
