@@ -30,56 +30,6 @@ Using advanced image processing and AI landmark tracking, the application contin
 * AI-based Image Processing
 * Computer Vision Techniques
 
----
-
-## 📂 Project Structure
-
-```text
-Elastic-Cam-AI/
-│
-├── models/
-├── src/
-│   ├── camera.py
-│   ├── landmark_detection.py
-│   ├── image_warp.py
-│   ├── elastic_effect.py
-│   └── utils.py
-│
-├── assets/
-├── requirements.txt
-├── main.py
-└── README.md
-```
-
----
-
-## 🚀 Installation
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/Elastic-Cam-AI.git
-```
-
-2. Navigate to the project folder
-
-```bash
-cd Elastic-Cam-AI
-```
-
-3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the application
-
-```bash
-python main.py
-```
-
----
 
 ## ▶️ How It Works
 
@@ -110,21 +60,3 @@ python main.py
 * Mobile application support
 * 3D skin deformation
 * AI-enhanced elasticity simulation
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🙏 Acknowledgements
-
-Special thanks to the open-source Computer Vision and AI communities for providing powerful libraries that made this project possible.
