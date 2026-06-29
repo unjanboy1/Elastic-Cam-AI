@@ -46,15 +46,4 @@ The system processes video streams in real time, identifies objects or people, d
 5. View real-time detection results.
 6. Receive alerts for detected events.
 
----
 
-
-
-
-
-
----
-
-## ⭐ Support
-
-If you found this project useful, please consider giving it a ⭐ on GitHub.
