@@ -60,33 +60,6 @@ Elastic-Cam-AI/
 
 ---
 
-## ⚙️ Installation
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/Elastic-Cam-AI.git
-```
-
-2. Navigate to the project folder
-
-```bash
-cd Elastic-Cam-AI
-```
-
-3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the application
-
-```bash
-python app.py
-```
-
----
 
 ## 💻 Usage
 
@@ -99,58 +72,10 @@ python app.py
 
 ---
 
-## 🎯 Applications
 
-* Smart Surveillance
-* Home Security
-* Office Monitoring
-* Attendance Systems
-* Smart Cities
-* Traffic Monitoring
-* Retail Analytics
-* Industrial Safety
 
----
 
-## 📈 Future Improvements
 
-* Multi-camera support
-* Cloud storage integration
-* Mobile application
-* AI behavior analysis
-* Vehicle number plate recognition (ANPR)
-* Person re-identification
-* Voice-controlled commands
-* Dashboard with analytics
-
----
-
-## 👥 Contributors
-
-* Your Name
-* Team Members
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🙏 Acknowledgements
-
-Special thanks to the open-source AI and Computer Vision communities whose tools and libraries made this project possible.
-
----
-
-## 📧 Contact
-
-For questions or suggestions, please contact:
-
-**Email:** [your-email@example.com](mailto:your-email@example.com)
-
-**GitHub:** https://github.com/yourusername
 
 ---
 
