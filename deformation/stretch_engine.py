@@ -4,6 +4,7 @@ class StretchEngine:
     def __init__(self, strength=0.5):
         self.strength = strength
 
+
     def apply_stretch(self, image, points, anchor_point):
         """
         Simple fake stretch effect using point displacement.

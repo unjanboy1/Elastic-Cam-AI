@@ -47,9 +47,11 @@ class BodyPartSelector:
             # Right Cheek
             454: "RIGHT_CHEEK",
 
+
             # Forehead
             10: "FOREHEAD"
         }
+
 
         # -----------------------------
         # Pose Landmark Mapping

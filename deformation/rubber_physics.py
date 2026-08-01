@@ -6,6 +6,7 @@ class RubberPhysics:
         self.damping = damping
         self.velocity = 0
 
+
     def update(self, current_pos, target_pos):
         """
         Spring physics for smooth deformation

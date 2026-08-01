@@ -31,7 +31,6 @@ class FaceTracker:
             min_detection_confidence=FACE_DETECTION_CONFIDENCE,
             min_tracking_confidence=FACE_TRACKING_CONFIDENCE
         )
-
         self.mpDraw = mp.solutions.drawing_utils
 
         self.results = None
