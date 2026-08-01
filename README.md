@@ -1,23 +1,34 @@
 
 # Elastic Cam AI
 
-Elastic Cam AI is a high-performance, real-time computer vision application that simulates skin elasticity using AI-based landmark detection. By tracking key facial and body landmarks from a live camera feed, the system allows users to interactively pinch, pull, and deform specific skin regions. The application utilizes advanced coordinate mapping and image warping algorithms to deliver a highly responsive, physically plausible, and visually smooth deformation effect in real time.
+Elastic Cam AI is an advanced, high-performance computer vision application designed to simulate skin elasticity and deformation in real time. By leveraging state-of-the-art AI-based facial and body landmark tracking, the system continuously analyzes skin surfaces from a live webcam feed. Users can interactively select, pinch, stretch, and manipulate target skin regions while a dynamic image-warping pipeline renders physically plausible elastic movement.
+
+This project sits at the intersection of artificial intelligence, real-time computer vision, and digital geometry processing, serving as a robust foundation for interactive visual effects, clinical simulation, and academic research.
 
 ---
 
-## Key Features
+## 🌟 Key Features
 
-* **Real-Time Landmark Tracking:** High-fidelity, low-latency tracking of facial and body skin landmarks.
-* **Interactive Mesh Deformation:** Intuitive pinch-and-stretch interactions via mouse control or coordinate-based inputs.
-* **Dynamic Image Warping:** Seamless real-time rendering of skin elasticity using advanced mathematical warping techniques.
-* **Robust Motion Compensation:** Algorithms continuously track and adjust the deformed mesh even as the subject moves or rotates in front of the camera.
-* **Highly Optimized Pipeline:** Designed with a focus on low latency and high frame rates (FPS) for a lag-free user experience.
-* **User-Friendly Interface:** Minimalist and intuitive runtime window displaying both the original tracking overlay and the warped output.
+* **Real-Time High-Fidelity Tracking:** Utilizes deep-learning models to track facial and somatic landmarks with millisecond-level inference speeds.
+* **Interactive Mesh-Free Deformation:** Implements smooth geometric deformation fields controlled via mouse clicks, drags, or custom-mapped gesture coordinates.
+* **Dynamic Image Warping:** Employs advanced spatial transformation algorithms to translate mathematical stretching vectors into visually seamless pixel remapping.
+* **Intelligent Motion Compensation:** Features dynamic anchor-point tracking, allowing the warped effect to move naturally and stay pinned even when the user moves their head or body.
+* **Low-Latency Architecture:** Highly optimized asynchronous capture and rendering pipeline designed to run smoothly at $30+$ FPS on consumer-grade CPUs.
+* **Visual Debugging Mode:** Toggleable overlays showing active landmark points, vector displacement lines, and bounding boxes for real-time visualization of the system's underlying mathematics.
 
 ---
 
-## Technical Architecture
+## 🛠 Tech Stack & Core Libraries
 
-The application operates on a continuous, closed-loop processing pipeline designed to handle high-frequency video frames without bottle-necking the CPU.
+The application is written entirely in Python, utilizing standard, industry-proven libraries for maximum speed, compatibility, and ease of deployment:
 
-### System Pipeline
+* **Python:** Used for application logic, state estimation, and coordinating frame-by-frame processing.
+* **OpenCV (Open Source Computer Vision Library):** Handles hardware-level webcam capture, pixel-matrix transformations, frame rendering, and interactive UI windows.
+* **Google MediaPipe:** Powers the AI-based facial mesh and landmark localization, offering robust spatial tracking under varying lighting conditions.
+* **NumPy:** Conducts high-speed vector math, distance-field calculations, and matrix-level coordinate mapping.
+
+---
+
+## ⚙️ How It Works: Under the Hood
+
+The application relies on a fast, multi-stage processing loop that updates on every frame. Below is a detailed breakdown of the system pipeline.
